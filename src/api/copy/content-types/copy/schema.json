@@ -1,11 +1,10 @@
 {
-  "kind": "singleType",
-  "collectionName": "pages_landing_explorers",
+  "kind": "collectionType",
+  "collectionName": "copies",
   "info": {
-    "singularName": "pages-landing-explorer",
-    "pluralName": "pages-landing-explorers",
-    "displayName": "Pages/LandingExplorer",
-    "description": ""
+    "singularName": "copy",
+    "pluralName": "copies",
+    "displayName": "Copy"
   },
   "options": {
     "draftAndPublish": true
@@ -16,15 +15,15 @@
     }
   },
   "attributes": {
-    "title": {
+    "key": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       }
     },
-    "subTitle": {
+    "value": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -32,19 +31,19 @@
         }
       }
     },
-    "unlockThePowerText": {
+    "group": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       }
     },
-    "liveUpdatesText": {
-      "type": "string",
+    "description": {
+      "type": "text",
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       }
     }
