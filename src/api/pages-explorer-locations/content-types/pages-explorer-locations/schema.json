@@ -17,44 +17,108 @@
   },
   "attributes": {
     "title": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "string"
+      }
     },
     "subTitle": {
+      "type": "text",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "text"
+      }
     },
     "exploreAllText": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "string"
+      }
     },
-    "monthItemText": {
+    "exploreFullDashboard": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "string"
+      }
     },
-    "monthItemButtonText": {
+    "locationOfTheMonthDescription": {
+      "type": "text",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "string"
+      }
+    },
+    "totalTransactionTypeTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "geospatialCoverageTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "geospatialCoverageDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "activitiesTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "topSectorGrowthTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "organisationsTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sdgGoalsTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sdgGoalsDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

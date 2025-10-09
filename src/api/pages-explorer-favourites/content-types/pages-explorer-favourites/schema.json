@@ -17,36 +17,108 @@
   },
   "attributes": {
     "title": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "string"
+      }
     },
     "subTitle": {
+      "type": "text",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "text"
+      }
     },
     "emptyTitle": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "string"
+      }
     },
     "emptySubTitle": {
+      "type": "text",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "text"
+      }
+    },
+    "explorerButtonLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "activitiesButtonLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "editPopupCancelButtonLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "editPopupSaveButtonLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "favouritesWidgetTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "favouritesWidgetDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "editButtonLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "deleteButtonLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "favouritesWidgetNoFavouritesDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

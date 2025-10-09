@@ -17,92 +17,60 @@
   },
   "attributes": {
     "title": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "string"
+      }
     },
     "subTitle": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "string"
-    },
-    "locationsInputLabelText": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "organisationsInputLabelText": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "sectorsInputLabelText": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "activityStatusInputLabelText": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
-    "placeholderText": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
+      }
     },
     "searchButtonText": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "string"
+      }
     },
-    "secondaryTitle": {
+    "titleSDG": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "string"
+      }
     },
-    "periodSelectLabelText": {
+    "subTitleSDG": {
+      "type": "text",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "string"
+      }
     },
-    "budgetInputLabelText": {
+    "activitiesWidgetTitle": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "type": "string"
+      }
+    },
+    "activitiesWidgetDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

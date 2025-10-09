@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "pages_landing_explorers",
+  "collectionName": "pages_explorer_activitys",
   "info": {
-    "singularName": "pages-landing-explorer",
-    "pluralName": "pages-landing-explorers",
-    "displayName": "Pages/LandingExplorer",
-    "description": ""
+    "singularName": "pages-explorer-activity",
+    "pluralName": "pages-explorer-activitys",
+    "displayName": "Pages/Explorer/Activity"
   },
   "options": {
     "draftAndPublish": true
@@ -16,143 +15,7 @@
     }
   },
   "attributes": {
-    "title": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "subTitle": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "unlockThePowerText": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "liveUpdatesText": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "sectorsChartText": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "sectorsWidgetTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "sectorsWidgetDescription": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "sectorsWidgetButtonText": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "sdgsChartText": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "sdgsWidgetButtonText": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "sdgsWidgetTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "sdgsWidgetDescription": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "budgetsChartText": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "budgetsWidgetTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "budgetsWidgetButtonText": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "budgetsWidgetDescription": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "networksChartText": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "networksWidgetButtonText": {
+    "networksWidgetTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -168,7 +31,7 @@
         }
       }
     },
-    "organisationsWidgetButtonText": {
+    "resultsWidgetTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -176,15 +39,7 @@
         }
       }
     },
-    "organisationsWidgetTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "organisationsWidgetDescription": {
+    "resultsWidgetDescription": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -192,7 +47,7 @@
         }
       }
     },
-    "recentActivitiesTitle": {
+    "resultsWidgetExpandPrompt": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -200,7 +55,7 @@
         }
       }
     },
-    "recentActivitiesDescription": {
+    "resultsWidgetExpandDescription": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -208,7 +63,151 @@
         }
       }
     },
-    "searchActivitiesPlaceholder": {
+    "detailPageNotFoundButtonText": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "relatedActivitiesWidgetTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "relatedActivitiesWidgetDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "descriptionWidgetTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "descriptionWidgetDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "activityIdentifierLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "reportingOrganisationLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "activityDescriptionLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "activityDetailsLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "activityDatesLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "contactDetailsLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "resultsGlossaryOutputTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "resultsGlossaryOutputDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "resultsGlossaryOutcomeTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "resultsGlossaryOutcomeDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "resultsGlossaryImpactTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "resultsGlossaryImpactDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "resultsIndicatorTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "resultsReferenceTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {

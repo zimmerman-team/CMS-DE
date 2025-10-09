@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "components_generic_block_items",
+  "info": {
+    "singularName": "components-generic-block-item",
+    "pluralName": "components-generic-block-items",
+    "displayName": "Components/GenericBlockItem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "loadingErrorDescriptionText": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "noDataAvailableDescriptionText": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "noDataAvailableText": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
