@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "pages_explorers",
+  "collectionName": "pages_explorer_sectorrs",
   "info": {
-    "singularName": "pages-explorer",
-    "pluralName": "pages-explorers",
-    "displayName": "Pages/Explorer",
-    "description": ""
+    "singularName": "pages-explorer-sector",
+    "pluralName": "pages-explorer-sectorrs",
+    "displayName": "Pages/Explorer/Sector"
   },
   "options": {
     "draftAndPublish": true
@@ -16,7 +15,7 @@
     }
   },
   "attributes": {
-    "title": {
+    "sectorSelectLabel": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -24,7 +23,7 @@
         }
       }
     },
-    "subTitle": {
+    "sectorNotFoundButtonText": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -32,15 +31,7 @@
         }
       }
     },
-    "exploreIATIText": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "exploreIATISubText": {
+    "pageHeaderSubtitle": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -48,7 +39,15 @@
         }
       }
     },
-    "filterPanelAmountFromLabel": {
+    "overviewWidgetActivitiesTitle": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "overviewWidgetPlannedActivitiesTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -56,7 +55,7 @@
         }
       }
     },
-    "filterPanelAmountMinimumLabel": {
+    "overviewWidgetRecipientCountriesTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -64,63 +63,7 @@
         }
       }
     },
-    "filterPanelAmountToLabel": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "filterPanelAmountMaximumLabel": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "filterPanelNoFiltersApplied": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "filterPanelLabel": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "filterPanelNoFiltersSelectedText": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "filterPanelResetAllButtonText": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "filterPanelApplyButtonText": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "filterPanelResetTabSelections": {
+    "overviewWidgetTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -152,6 +95,22 @@
         }
       }
     },
+    "sdgsExpandedCardViewLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sdgsExpandedTableViewLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "networksWidgetTitle": {
       "type": "string",
       "pluginOptions": {
@@ -168,7 +127,7 @@
         }
       }
     },
-    "budgetsWidgetTitle": {
+    "sectorFundingWidgetTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -176,7 +135,7 @@
         }
       }
     },
-    "budgetsWidgetDescription": {
+    "sectorFundingWidgetDescription": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -185,14 +144,6 @@
       }
     },
     "organisationsWidgetTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "sectorsWidgetTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -216,7 +167,7 @@
         }
       }
     },
-    "activitiesWidgetTitle": {
+    "recentActivitiesWidgetTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -224,16 +175,8 @@
         }
       }
     },
-    "activitiesWidgetDescription": {
+    "recentActivitiesWidgetDescription": {
       "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "transactionTypeSelectLabel": {
-      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true

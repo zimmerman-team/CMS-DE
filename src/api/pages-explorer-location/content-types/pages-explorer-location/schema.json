@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "pages_explorers",
+  "collectionName": "pages_explorer_locationns",
   "info": {
-    "singularName": "pages-explorer",
-    "pluralName": "pages-explorers",
-    "displayName": "Pages/Explorer",
-    "description": ""
+    "singularName": "pages-explorer-location",
+    "pluralName": "pages-explorer-locationns",
+    "displayName": "Pages/Explorer/Location"
   },
   "options": {
     "draftAndPublish": true
@@ -16,7 +15,7 @@
     }
   },
   "attributes": {
-    "title": {
+    "locationSelectLabel": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -24,7 +23,7 @@
         }
       }
     },
-    "subTitle": {
+    "locationNotFoundButtonText": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -32,15 +31,7 @@
         }
       }
     },
-    "exploreIATIText": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "exploreIATISubText": {
+    "pageHeaderSubtitle": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -48,7 +39,7 @@
         }
       }
     },
-    "filterPanelAmountFromLabel": {
+    "overviewActivitiesTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -56,7 +47,7 @@
         }
       }
     },
-    "filterPanelAmountMinimumLabel": {
+    "overviewPlannedActivitiesTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -64,7 +55,7 @@
         }
       }
     },
-    "filterPanelAmountToLabel": {
+    "overviewOrganisationsTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -72,7 +63,7 @@
         }
       }
     },
-    "filterPanelAmountMaximumLabel": {
+    "overviewTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -80,7 +71,7 @@
         }
       }
     },
-    "filterPanelNoFiltersApplied": {
+    "geospatialDataTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -88,63 +79,7 @@
         }
       }
     },
-    "filterPanelLabel": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "filterPanelNoFiltersSelectedText": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "filterPanelResetAllButtonText": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "filterPanelApplyButtonText": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "filterPanelResetTabSelections": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "locationsWidgetTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "sdgsWidgetTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "sdgsWidgetExpandedDescription": {
+    "geospatialDataDescription": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -152,7 +87,7 @@
         }
       }
     },
-    "networksWidgetTitle": {
+    "sdgsTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -160,7 +95,7 @@
         }
       }
     },
-    "networksWidgetDescription": {
+    "sdgsExpandedDescription": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -168,7 +103,7 @@
         }
       }
     },
-    "budgetsWidgetTitle": {
+    "sdgsExpandedCardViewLabel": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -176,7 +111,23 @@
         }
       }
     },
-    "budgetsWidgetDescription": {
+    "sdgsExpandedTableViewLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "networksTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "networksDescription": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -184,7 +135,7 @@
         }
       }
     },
-    "organisationsWidgetTitle": {
+    "budgetTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -192,23 +143,7 @@
         }
       }
     },
-    "sectorsWidgetTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "impactWidgetTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "impactWidgetDescription": {
+    "budgetDescription": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -216,7 +151,7 @@
         }
       }
     },
-    "activitiesWidgetTitle": {
+    "organisationsTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -224,7 +159,23 @@
         }
       }
     },
-    "activitiesWidgetDescription": {
+    "sectorsTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "impactTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "impactDescription": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -232,8 +183,16 @@
         }
       }
     },
-    "transactionTypeSelectLabel": {
+    "recentActivitiesTitle": {
       "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "recentActivitiesDescription": {
+      "type": "text",
       "pluginOptions": {
         "i18n": {
           "localized": true

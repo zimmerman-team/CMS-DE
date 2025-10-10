@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "pages_explorers",
+  "collectionName": "pages_explorer_organisationns",
   "info": {
-    "singularName": "pages-explorer",
-    "pluralName": "pages-explorers",
-    "displayName": "Pages/Explorer",
-    "description": ""
+    "singularName": "pages-explorer-organisation",
+    "pluralName": "pages-explorer-organisationns",
+    "displayName": "Pages/Explorer/Organisation"
   },
   "options": {
     "draftAndPublish": true
@@ -16,7 +15,7 @@
     }
   },
   "attributes": {
-    "title": {
+    "organisationSelectLabel": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -24,23 +23,7 @@
         }
       }
     },
-    "subTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "exploreIATIText": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "exploreIATISubText": {
+    "currencyToggleTooltip": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -48,7 +31,7 @@
         }
       }
     },
-    "filterPanelAmountFromLabel": {
+    "currencyToggleLabel": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -56,7 +39,7 @@
         }
       }
     },
-    "filterPanelAmountMinimumLabel": {
+    "orgNotFoundButtonText": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -64,7 +47,15 @@
         }
       }
     },
-    "filterPanelAmountToLabel": {
+    "pageHeaderSubtitle": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "activitiesWidgetTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -72,7 +63,15 @@
         }
       }
     },
-    "filterPanelAmountMaximumLabel": {
+    "activitiesWidgetDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "datasetsWidgetTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -80,7 +79,15 @@
         }
       }
     },
-    "filterPanelNoFiltersApplied": {
+    "datasetsWidgetDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "detailPanelContentCollapseButtonText": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -88,7 +95,7 @@
         }
       }
     },
-    "filterPanelLabel": {
+    "detailPanelContentMetadataTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -96,7 +103,7 @@
         }
       }
     },
-    "filterPanelNoFiltersSelectedText": {
+    "detailPanelContentContentsTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -104,7 +111,7 @@
         }
       }
     },
-    "filterPanelResetAllButtonText": {
+    "detailPanelContentValidationReportTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -112,7 +119,7 @@
         }
       }
     },
-    "filterPanelApplyButtonText": {
+    "overviewWidgetActivitiesTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -120,7 +127,23 @@
         }
       }
     },
-    "filterPanelResetTabSelections": {
+    "overviewWidgetPlannedActivitiesTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "overviewWidgetRecipientCountriesTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "overviewWidgetTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -152,6 +175,22 @@
         }
       }
     },
+    "sdgsWidgetExpandedCardViewLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sdgsWidgetExpandedTableViewLabel": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "networksWidgetTitle": {
       "type": "string",
       "pluginOptions": {
@@ -168,32 +207,16 @@
         }
       }
     },
-    "budgetsWidgetTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "budgetsWidgetDescription": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "organisationsWidgetTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "sectorsWidgetTitle": {
       "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sectorsWidgetDescription": {
+      "type": "text",
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -210,30 +233,6 @@
     },
     "impactWidgetDescription": {
       "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "activitiesWidgetTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "activitiesWidgetDescription": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "transactionTypeSelectLabel": {
-      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
