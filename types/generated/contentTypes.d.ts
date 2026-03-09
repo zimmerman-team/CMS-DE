@@ -1018,6 +1018,49 @@ export interface ApiGeneralGeneral extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiGlossaryGlossary extends Struct.CollectionTypeSchema {
+  collectionName: 'glossaries';
+  info: {
+    displayName: 'Glossary';
+    pluralName: 'glossaries';
+    singularName: 'glossary';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    Content: Schema.Attribute.Text &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Keyword: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::glossary.glossary'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPagesDatasetsAccessToFundingPagesDatasetsAccessToFunding
   extends Struct.SingleTypeSchema {
   collectionName: 'pages_datasets_access_to_fundings';
@@ -1682,6 +1725,55 @@ export interface ApiPagesGeographyPagesGeography
       'api::pages-geography.pages-geography'
     >;
     publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPagesGlossaryPagesGlossary extends Struct.SingleTypeSchema {
+  collectionName: 'pages_glossaries';
+  info: {
+    displayName: 'Pages/Glossary';
+    pluralName: 'pages-glossaries';
+    singularName: 'pages-glossary';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::pages-glossary.pages-glossary'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    searchPlaceholder: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     title: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -3209,12 +3301,14 @@ declare module '@strapi/strapi' {
       'api::components-search.components-search': ApiComponentsSearchComponentsSearch;
       'api::country-summary.country-summary': ApiCountrySummaryCountrySummary;
       'api::general.general': ApiGeneralGeneral;
+      'api::glossary.glossary': ApiGlossaryGlossary;
       'api::pages-datasets-access-to-funding.pages-datasets-access-to-funding': ApiPagesDatasetsAccessToFundingPagesDatasetsAccessToFunding;
       'api::pages-datasets-annual-results.pages-datasets-annual-results': ApiPagesDatasetsAnnualResultsPagesDatasetsAnnualResults;
       'api::pages-datasets-grant-implementation.pages-datasets-grant-implementation': ApiPagesDatasetsGrantImplementationPagesDatasetsGrantImplementation;
       'api::pages-datasets-resource-mobilization.pages-datasets-resource-mobilization': ApiPagesDatasetsResourceMobilizationPagesDatasetsResourceMobilization;
       'api::pages-datasets.pages-datasets': ApiPagesDatasetsPagesDatasets;
       'api::pages-geography.pages-geography': ApiPagesGeographyPagesGeography;
+      'api::pages-glossary.pages-glossary': ApiPagesGlossaryPagesGlossary;
       'api::pages-grant-detail.pages-grant-detail': ApiPagesGrantDetailPagesGrantDetail;
       'api::pages-grant-documents.pages-grant-documents': ApiPagesGrantDocumentsPagesGrantDocuments;
       'api::pages-grant-grant-implementation.pages-grant-grant-implementation': ApiPagesGrantGrantImplementationPagesGrantGrantImplementation;
