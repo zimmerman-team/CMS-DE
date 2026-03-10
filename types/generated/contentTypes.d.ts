@@ -430,6 +430,61 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiChangelogChangelog extends Struct.CollectionTypeSchema {
+  collectionName: 'changelogs';
+  info: {
+    displayName: 'Changelog';
+    pluralName: 'changelogs';
+    singularName: 'changelog';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    date: Schema.Attribute.Date &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::changelog.changelog'
+    >;
+    notes: Schema.Attribute.JSON &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    version: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+  };
+}
+
 export interface ApiComponentsChartsEligibilityComponentsChartsEligibility
   extends Struct.SingleTypeSchema {
   collectionName: 'components_charts_eligibilities';
@@ -570,6 +625,12 @@ export interface ApiComponentsFooterComponentsFooter
           localized: true;
         };
       }>;
+    changelogText: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     connectTitle: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -616,6 +677,12 @@ export interface ApiComponentsFooterComponentsFooter
         };
       }>;
     globalFundWebsiteText: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    glossaryText: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1055,6 +1122,56 @@ export interface ApiGlossaryGlossary extends Struct.CollectionTypeSchema {
       'api::glossary.glossary'
     >;
     publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPagesChangelogPagesChangelog
+  extends Struct.SingleTypeSchema {
+  collectionName: 'pages_changelogs';
+  info: {
+    displayName: 'Pages/Changelog';
+    pluralName: 'pages-changelogs';
+    singularName: 'pages-changelog';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::pages-changelog.pages-changelog'
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    searchPlaceholder: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -3295,6 +3412,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::changelog.changelog': ApiChangelogChangelog;
       'api::components-charts-eligibility.components-charts-eligibility': ApiComponentsChartsEligibilityComponentsChartsEligibility;
       'api::components-footer.components-footer': ApiComponentsFooterComponentsFooter;
       'api::components-header.components-header': ApiComponentsHeaderComponentsHeader;
@@ -3302,6 +3420,7 @@ declare module '@strapi/strapi' {
       'api::country-summary.country-summary': ApiCountrySummaryCountrySummary;
       'api::general.general': ApiGeneralGeneral;
       'api::glossary.glossary': ApiGlossaryGlossary;
+      'api::pages-changelog.pages-changelog': ApiPagesChangelogPagesChangelog;
       'api::pages-datasets-access-to-funding.pages-datasets-access-to-funding': ApiPagesDatasetsAccessToFundingPagesDatasetsAccessToFunding;
       'api::pages-datasets-annual-results.pages-datasets-annual-results': ApiPagesDatasetsAnnualResultsPagesDatasetsAnnualResults;
       'api::pages-datasets-grant-implementation.pages-datasets-grant-implementation': ApiPagesDatasetsGrantImplementationPagesDatasetsGrantImplementation;
